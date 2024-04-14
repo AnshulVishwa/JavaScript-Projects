@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.blur {
+    background-image: linear-gradient( to top , rgba(0,0,0,0) 0% , rgba(0,0,0,0) 80%, rgba(0,0,0,0.4) 88%);
+    height: 56vmax;
+}
+.mainimage {
+    background-image: url(images/wp2707538-4k-car-wallpaper.jpg);
+    height: 56vmax;
+    background-size: cover;
+}
+.imageLogo{
+    height:4vmax;
+}
+.imageLogo:hover{
+    animation: move linear 1s 1;
+}
+@keyframes move {
+    0%{transform: translate(0px , 0px);}
+    50%{transform: translate(7px , 7px);}
+    100%{transform: translate(0px , 0px);}
+}
+.navbar , .right , .left{
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:fit-content ;
+    color:white;
+}
+.right {
+    justify-content: space-evenly;
+    width: 55vmax;
+}
+.navbar{
+    justify-content: space-between;
+    padding: 0 2vmax;
+    height: 6vmax;
+    text-shadow:0 0 10px white;
+}
+.navItem {
+    display: flex;
+    align-items: center;
+    text-shadow:0 0 10px white;
+}
+.logo {
+    font-family: 'Faster One', system-ui;
+    font-size: 2.5vmax;
+    color: white;
+    letter-spacing: 2px;
+}
+.logo:hover{
+    animation: letter linear 1s 1;
+    
+}
+@keyframes letter {
+    0%{letter-spacing: 2px;}
+    50%{letter-spacing: 5px;}
+    100%{letter-spacing: 2px;}
+}
+.lang{
+    outline: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+.lang , .latest ,.about , .login{
+    font-size:1.5vmax;
+}
+option{
+    color: black;
+}
+select , span {
+    cursor: pointer;
+}
+option , span , select , lord-icon{
+    text-shadow:0 0 10px white;
+}
+.navbarBefore {
+    background-color: white;
+    height: 9vmax;
+    width: 1vmax;
+    transform: translate(-5vmax,0px) rotate(27deg);
+    position: absolute;
+    filter: blur(5px);
+}
+.navbar:hover .navbarBefore{animation: reflection 1s ease-in-out 1;}
+@keyframes reflection {
+    0%{transform: translate(-5vmax,0px) rotate(27deg);}
+    100%{transform: translate(100vmax,0px) rotate(27deg);}
+}
+.image {
+    height: 50.88vmax;
+}
+.MainImageName {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: -2vmax;
+    top: 33vmax;
+    color: white;
+    justify-content: space-evenly;
+    height: 16vmax;
+    width: fit-content;
+}
+.big:hover{
+    animation: mainName 1s linear infinite;
+}
+@keyframes mainName {
+    0%{text-shadow: 0 0 10px;transform:scale(1)}
+    50%{text-shadow: 0 0 5px;transform:scale(1.001)}
+    100%{text-shadow: 0 0 10px;transform:scale(1)}
+}
+
+/* /////////////////////////////////////////// */
+.content{
+    background-image: linear-gradient(45deg , #ffffff , #dd1818 ,#ffffff);
+}
+.create {
+    height: 30vmax;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-around;
+    /* background-color: red; */
+    padding: 6vmax 0;
+}
+.creatediv2 , .createTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.brand {
+    font-size: 3vmax;
+}
+img.img {
+    height: 22vmax;
+    animation:animateImage 2s linear infinite
+}
+.createRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 6vmax;
+    font-size: 1.5vmax;
+}
+@keyframes animateImage{
+    0%{transform: translateY(0px);}
+    25%{transform: translateY(2px);}
+    50%{transform: translateY(0px);}
+    75%{transform: translateY(-2px);}
+    100%{transform: translateY(0px);}
+}
+@keyframes mainName2 {
+    0% {
+        text-shadow: 0 0 2px;
+    }
+    50% {
+        text-shadow: 0 0 0px;
+    }
+    100% {
+        text-shadow: 0 0 2px;
+    }
+}
+.Mainname , .Speed {
+    animation: mainName2 2s linear infinite;
+}
+footer {
+    background-color: #212121;
+    color: white;
+    height: 25vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1vmax 4vmax;
+    font-size: 1.5vmax;
+}
+.grid {
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 3vmax;
+    padding: 1vmax 4vmax;
+}
+a.spaGrid {
+    color: white;
+    text-decoration: none;
+}
+a.spaGrid:hover{
+    color: rgb(220, 136, 136);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: 1s;
+}
+body{
+    scroll-behavior:smooth;
+}
+option{
+    background-color: transparent;
+}
