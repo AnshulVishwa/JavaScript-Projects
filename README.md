@@ -1,4 +1,4 @@
 # Basic-JavaScript-Project
 <br>
 
-This is My JavaScript Repository which includes basic java script progrms
+This is My Repository which includes HTML CSS and JAVA SCRIPT Programs.
