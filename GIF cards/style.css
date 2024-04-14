@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* padding: 5vmax; */
+    background-image: url(https://wallpapercave.com/wp/wp6669547.jpg);
+    background-size: cover;
+}
+.content {
+    height: 30vmax;
+    width: 35vmax;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    /* border: 1px solid; */
+    border-radius: 38px;
+}
+img {
+    height: 11vmax;
+}
+input {
+    outline: none;
+    border: none;
+    font-size: 1.5vmax;
+    /* margin: 3vmax 0vmax 0vmax -14vmax; */
+    width: 32.6vmax;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+    display: none;
+}
+.container-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+aside {
+    font-size: 1vmax;
+}
+.contain {
+    display: flex;
+    justify-content: space-around;
+}
+.form-control-color {
+    width: 3rem;
+    height: calc(1.5em + 0.75rem + calc(var(--bs-border-width) * 2));
+    padding: 0.1rem;
+}
+input#exampleColorInput {
+    height: 3vmax;
+}

@@ -1,0 +1,44 @@
+[
+    {
+        "name" : "Rob",
+        "age" : "10yrs",
+        "Platform" : "Pubg",
+        "avatar" : "https://i.pinimg.com/736x/51/96/b3/5196b34be5aec2079e4b68190299a544.jpg",
+        "title" : "Burning Clash"
+    },
+    {
+        "name" : "Bob",
+        "age" : "18yrs",
+        "Platform" : "Free Fire",
+        "avatar" : "https://img.freepik.com/premium-vector/gamers-mascot-logo-esport-template-design_142989-595.jpg",
+        "title" : "Peacemaker"
+    },
+    {
+        "name" : "Adam",
+        "age" : "21yrs",
+        "Platform" : "Clash of Clanes",
+        "avatar" : "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/131460353/original/6cae1cc807edb51169a81f9b7d9b370171f85a27/do-a-gaming-avatar.png",
+        "title" : "Clash Break"
+    },
+    {
+        "name" : "Dimitri",
+        "age" : "22yrs",
+        "Platform" : "Free Fire",
+        "avatar" : "https://media.istockphoto.com/id/1185655985/vector/gamer-portrait-video-games-background-glitch-style-player-vector-illustration-online-user.jpg?s=612x612&w=0&k=20&c=uoy0NDqomF2RzJdrNFQM25WwVahjRggjDHYhQoNnx3M=",
+        "title" : "HeadBreaker"
+    },
+    {
+        "name" : "Eve",
+        "age" : "19yrs",
+        "Platform" : "Pubg",
+        "avatar" : "https://wallpapercave.com/wp/wp7797654.jpg",
+        "title" : "All Alone"
+    },
+    {
+        "name" : "Mr. Confident",
+        "age" : "20yrs",
+        "Platform" : "Pubg",
+        "avatar" : "https://img.freepik.com/premium-vector/sleek-modern-logo-boy-with-glasses-wearing-black-tshirt_730620-46946.jpg",
+        "title" : "Spectacular Musk"
+    }
+]
