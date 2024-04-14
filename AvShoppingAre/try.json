@@ -1,0 +1,96 @@
+[
+    {
+        "id" :0,
+        "username" : "Anshul",
+        "productName" : "HeadPhones",
+        "price" : "$23.05",
+        "imgSrc" : "https://vlebazaar.in/image/cache/catalog/B0856HNMR7/boAt-Rockerz-370-Wireless-Headphone-with-Bluetooth-50-Immersive-Audio-Lightweight-Ergonomic-Design-Cosy-Padded-Earcups-and-Up-to-12H-Playback-Bliss-Buoyant-Black-B0856HNMR7-1100x1100.jpg",
+        "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, dolorem! Ipsam doloribus deserunt nulla doloremque natus, earum dicta quaerat nostrum. Quod magni aperiam ea voluptates officiis molestiae recusandae quia rerum."
+    },
+    {
+        "id" :1,
+        "username" : "Arpit",
+        "productName" : "EarBuds",
+        "price" : "$29.05",
+        "imgSrc" : "https://m.media-amazon.com/images/I/61ars+VGPVL._AC_UY327_FMwebp_QL65_.jpg",
+        "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, dolorem! Ipsam doloribus deserunt nulla doloremque natus, earum dicta quaerat nostrum. Quod magni aperiam ea voluptates officiis molestiae recusandae quia rerum."
+    },
+    {
+        "id" :2,
+        "username" : "Yash",
+        "productName" : "KeyBoard",
+        "price" : "$96.05",
+        "imgSrc" : "images/keyboard.jpg",
+        "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, dolorem! Ipsam doloribus deserunt nulla doloremque natus, earum dicta quaerat nostrum. Quod magni aperiam ea voluptates officiis molestiae recusandae quia rerum."
+    },
+    {
+        "id" :3,
+        "username" : "Karan",
+        "productName" : "Drone",
+        "price" : "$86.05",
+        "imgSrc" : "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTlHDA4k53l3l3oqdIs79_KibR550snAQ6hnbUXTizDHZmzA3o0Ue4PR1HlESiB2DXi1VfEcC6hKZMu8TPTd3bahx5CUycaYVafhaKEPN6EH5uZ0VZWNIzliQ&usqp=CAE",
+        "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, dolorem! Ipsam doloribus deserunt nulla doloremque natus, earum dicta quaerat nostrum. Quod magni aperiam ea voluptates officiis molestiae recusandae quia rerum."
+    },
+    {
+        "id" :4,
+        "username" : "Bhavya",
+        "productName" : "Kurta",
+        "price" : "$56.05",
+        "imgSrc" : "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSb8cgDx5khlu182w7dpNS-CfizGjudLEDosiu4N-jsjnaGh4YY_-Gvgfzesl-udTXZetXTwpPEPpO-ppUH19C1sgfcPZ_2LRY_VVlJdVdR&usqp=CAE",
+        "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, dolorem! Ipsam doloribus deserunt nulla doloremque natus, earum dicta quaerat nostrum. Quod magni aperiam ea voluptates officiis molestiae recusandae quia rerum."
+    },
+    {
+        "id" :5,
+        "username" : "Bhola",
+        "productName" : "Tops",
+        "price" : "$520.3",
+        "imgSrc" : "images/c4.webp",
+        "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, dolorem! Ipsam doloribus deserunt nulla doloremque natus, earum dicta quaerat nostrum. Quod magni aperiam ea voluptates officiis molestiae recusandae quia rerum."
+    },
+    {
+        "id" :6,
+        "username" : "Prince",
+        "productName" : "Jeans",
+        "price" : "$93.6",
+        "imgSrc" : "images/c41.webp",
+        "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, dolorem! Ipsam doloribus deserunt nulla doloremque natus, earum dicta quaerat nostrum. Quod magni aperiam ea voluptates officiis molestiae recusandae quia rerum."
+    },
+    {
+        "id" :7,
+        "username" : "Jethalal",
+        "productName" : "Saree",
+        "price" : "$78.2",
+        "imgSrc" : "images/c3-4.jpg",
+        "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, dolorem! Ipsam doloribus deserunt nulla doloremque natus, earum dicta quaerat nostrum. Quod magni aperiam ea voluptates officiis molestiae recusandae quia rerum."
+    },
+    {
+        "id" : 8,
+        "productName" : "Apple",
+        "price" : "$23.05",
+        "imgSrc" : "images/gr11.png",
+        "description" :"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, dolorem! Ipsam doloribus deserunt nulla doloremque natus, earum dicta quaerat nostrum. Quod magni aperiam ea voluptates officiis molestiae recusandae quia rerum."
+    },
+    {
+        "id" : 9,
+        "productName" : "Mango",
+        "price" : "$25.05",
+        "imgSrc" : "images/gr14.jpg",
+        "description" :"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, dolorem! Ipsam doloribus deserunt nulla doloremque natus, earum dicta quaerat nostrum. Quod magni aperiam ea voluptates officiis molestiae recusandae quia rerum."
+    },
+    {
+        "id" : 10,
+        "productName" : "Tomato",
+        "price" : "$24",
+        "imgSrc" : "images/gr21.jpg",
+        "description" :"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, dolorem! Ipsam doloribus deserunt nulla doloremque natus, earum dicta quaerat nostrum. Quod magni aperiam ea voluptates officiis molestiae recusandae quia rerum."
+    },
+    {
+        "id" : 11,
+        "productName" : "Carrot",
+        "price" : "$13.25",
+        "imgSrc" : "images/gr22.jpg",
+        "description" :"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, dolorem! Ipsam doloribus deserunt nulla doloremque natus, earum dicta quaerat nostrum. Quod magni aperiam ea voluptates officiis molestiae recusandae quia rerum."
+    }
+    
+]
+

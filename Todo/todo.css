@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    background: #121212;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 52vmax;
+    color: white;
+    background: #121212;
+}
+h1 , h2{
+    text-align: center;
+}
+.divInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 10vmax; */
+}
+.inputTodo , .btn{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+}
+.btn {
+    background: #03A9F4;
+    padding: 5px 13px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.3vmax;
+}
+.btn:hover{ background: #027db7;}
+input.inputTodo {
+    font-size: 1.3vmax;
+    margin-top: 3px;
+    padding-bottom: 8px;
+    width: 20vmax;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+
+/* ////////////////////////// */
+
+
+.todo {
+    background-color: #5d5d5d;
+    height: 3vmax;
+    width: 28vmax;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5vmax;
+    margin-top: 2px;
+}
+span {
+    background: transparent;
+}
+span.cancel {
+    font-size: 2.5vmax;
+    cursor: pointer;
+}
+span.cancel:hover{
+    color: #acacac;
+}
+.todoText{
+    width: 5vmax;
+}
