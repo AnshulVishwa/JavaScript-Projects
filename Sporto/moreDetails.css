@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    animation:StartingPoint 1s ease-in-out 1;
+}
+@keyframes StartingPoint{
+    0% {filter : blur(4px)}
+    25% {filter : blur(3px)}
+    75% {filter: blur(1px)}
+    100% {filter : blur(0px)}
+    } 
+input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid grey;
+    margin-left: 1vmax;
+    padding-left: 0.5vmax;
+    color: rgb(60, 60, 60);
+    filter: blur(2);
+
+}
+input::placeholder{
+    color: rgb(183, 183, 183);
+}
+fieldset{
+    border: 1px solid grey;
+}
+img {
+    height: 2.5vmax;
+    cursor: pointer;
+}
+form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 52.5vmax;
+}
+
+.content {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 46vmax;
+    width: 74vmax;
+    font-size: 1.5vmax;
+}
+div#box {
+    display: flex;
+    /* width: 94%; */
+    justify-content: space-around;
+    align-items: center;
+}
+.payment{
+    width: 58%;
+}
+.dibba {
+    width: 33vmax;
+}
+input#fullAdress {
+    width: 13.1vmax;
+}
+legend {
+    margin-left: 2vmax;
+    font-size: 2vmax;
+}
+.div{
+    height: 52vmax;
+    width: 100vmax;
+    position: absolute;
+    top: 0;
+    backdrop-filter: blur(3px);
+    background-color: transparent;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}

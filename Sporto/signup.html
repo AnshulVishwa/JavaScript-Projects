@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            font-family: 'Noto Sans', sans-serif;
+        }
+        
+        body {
+            height: 50vmax;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 38vmax;
+        }
+        fieldset {
+            padding: 1vmax 2vmax;
+            border-radius: 5vmax;
+            border: 1px solid black;
+        }
+        legend{
+            font-weight: 800;
+        }
+
+        input {
+            border: none;
+            outline: none;
+            background-color: transparent;
+            border-bottom: 1px solid;
+        }
+        .div {
+            padding: 0.5vmax 1vmax;
+            border-radius: 5px;
+            border: none;
+            background-color: crimson;
+            color: white;
+        }
+        .div:hover{
+            transition-duration:0.5s ;
+            background-color: brown;
+        }
+    </style>
+
+</head>
+<body>
+    <form>
+        <h1>Welcome User</h1>
+    
+        <fieldset>
+            <legend>Username</legend> <input type="text" id="username" placeholder="Create Username">
+        </fieldset>
+        <fieldset>
+            <legend>Password</legend>
+            <input type="password" id="password" placeholder="Create Password">
+        </fieldset>
+    
+        <div class="div" style="font-family: 'Noto Sans', sans-serif;">Sign Up</div>
+    </form>
+</body>
+</html>
+<script>
+    localStorage.clear()
+    const user = document.querySelector('#username')
+    const pass = document.querySelector('#password')
+    const btn = document.querySelector('.div')
+
+    btn.addEventListener('click',()=>{
+        const uservalue = user.value
+        const passvalue = pass.value
+
+        localStorage.setItem('username' , uservalue)
+        localStorage.setItem('password' , passvalue)
+        console.log(localStorage)
+
+        user.value = ''
+        pass.value = ''
+
+        window.location.href = "login.html"
+
+    })
+    
+</script>

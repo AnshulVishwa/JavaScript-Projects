@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "buyPage.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="div"></div>
+    <div class="contentBox">
+        <div class="imageBox">
+            <img src="" alt="">
+        </div>
+        <div class="name"></div>
+        <div class="price"></div>
+        <div class="lorem">
+            DESCRIPTION ~
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum esse consectetur similique laboriosam dolorum sed perspiciatis alias, voluptas dolorem aliquam quam cum at blanditiis a, maxime placeat, repellendus minus. Voluptatum.
+            Nam, alias nisi dolorem repellendus quia sunt consequatur distinctio at tenetur, eaque temporibus. Eveniet sit illum ex at cumque excepturi dolorem quod in aperiam reiciendis. Saepe esse aut id quibusdam.
+        </div>
+        <button class="BuyBtn">Buy Now
+            <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                <lord-icon
+                    src="https://cdn.lordicon.com/gkryirhd.json"
+                    trigger="loop"
+                    state="loop-rotation-unfold"
+                    colors="primary:#ffffff"
+                    style="
+                    height: 1.8vmax;
+                    position: relative;
+                    display: none;
+                    ">
+                </lord-icon>
+        </button>   
+    </div>
+</body>
+</html>
+<script>
+    const content = JSON.parse(localStorage.getItem("HighOrderContent"))
+    console.log(content.brand)
+    const img = document.querySelector('img')
+    img.setAttribute('src' , `${content.image}`)
+
+    const price = document.querySelector('.price')
+    price.innerHTML = content.price
+    
+    const Name = document.querySelector('.name')
+    Name.innerHTML = content.name
+    
+    const btn = document.querySelector(".BuyBtn")
+
+    
+    btn.addEventListener('click' , ()=>{
+        function AlreadySelected(){
+            const icon = document.querySelector('lord-icon')
+            icon.style.display = 'block'
+            setTimeout( ()=>{
+                btn.style.fontSize = '1.1vmax'
+                btn.setAttribute('id','animate')
+                btn.innerHTML = `You have already selected this Item <a href = "sporto.html" style="margin-right : 0.8vmax">Click Here</a> to enjoy More Shopping. `
+            } , 1000 )
+        }
+
+        if(localStorage.key(0) == "selected"){
+            let select = JSON.parse(localStorage.selected)
+            if(select.name == content.name){
+                AlreadySelected()
+            }
+        }
+        else{
+            const icon = document.querySelector('lord-icon')
+            icon.style.display = 'block'
+            setTimeout( ()=>{
+                btn.style.fontSize = '1.1vmax'
+                btn.setAttribute('id','animate')
+                btn.innerHTML = `Your Tortal Price is <b>${content.price}</b>. We will shortly Ship your Item. It will be reached to you as soon as Possible
+                
+                Enjoy More Shopping<a href = "moreDetails.html">Click Here</a>` 
+        
+            } , 2600 )
+            const selected = {
+                name : content.name,
+                image : content.image,
+                brand : content.brand,
+                price : content.price
+            }
+            localStorage.setItem("selected",JSON.stringify(selected))
+        }
+
+    })
+
+    setTimeout
+</script>

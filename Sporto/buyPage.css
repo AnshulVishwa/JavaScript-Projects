@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+body{
+    animation:StartingPoint 1s ease-in-out 1;
+}
+@keyframes StartingPoint{
+    0% {filter : blur(4px)}
+    25% {filter : blur(3px)}
+    75% {filter: blur(1px)}
+    100% {filter : blur(0px)}
+    } 
+.contentBox {
+    display: flx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* padding-left: 10%; */
+    height: 51vmax;
+    /* padding: 0 12vmax; */
+}
+img {
+    height: 13vmax;
+    /* width: 13vmax; */
+    border-radius: 20%;
+}
+.name {
+    font-size: 3vmax;
+}
+.price {
+    font-size: 1.5vmax;
+    font-weight: 700;
+}
+.lorem{
+    text-align: center;
+}
+button.BuyBtn {
+    max-width: fit-content;
+    padding: 0.5vmax;
+    background-color: #4141ff;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    display: flex;
+    transition: all;
+    transition-duration: 1s;
+    font-size: 1.3vmax;
+}
+#animate{
+    animation: animate 1s 1;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+a{
+    color: white;
+    padding-left: 0.5vmax;
+}

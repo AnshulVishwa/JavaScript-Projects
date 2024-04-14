@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+body{
+    animation:StartingPoint 1s ease-in-out 1;
+}
+@keyframes StartingPoint{
+    0% {filter : blur(4px)}
+    25% {filter : blur(3px)}
+    75% {filter: blur(1px)}
+    100% {filter : blur(0px)}
+    } 
+.navbar{
+    display: none;
+}
+/* //////////////////////////////////// */
+
+.mainContent {
+    width: 100vmax;
+    height: 46.6vmax;
+    display: flex;
+}
+.imageBoxIMG {
+    width: 50vmax;
+}
+.contentDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 45vmax;
+    padding: 0 10vmax;
+}
+.brandname {
+    font-size: 2.5vmax;
+}
+.imageBox {
+    width: 500%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imageBoxIMG {
+    max-width: 41vmax;
+    height: 41vmax;
+}
+.description{
+    text-align: center;
+}
+button.buyNow {
+    background-color: red;
+    outline: none;
+    border: none;
+    padding: 0.5vmax;
+    color: white;
+    border-radius: 5px;
+}
+button.buyNow:hover{
+    background-color: #c90000;
+}
