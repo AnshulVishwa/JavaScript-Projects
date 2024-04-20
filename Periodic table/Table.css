@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Platypi", serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background: #212121;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction :column
+}
+.header {
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    top: 1%;
+}
+.content {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.grid {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-rows: repeat(7, 5em);
+    position: absolute;
+    top: 1%;
+}
+.rows {
+    display: grid;
+    grid-template-columns: repeat(18, 4.2em);
+    /* grid-template-rows: 1fr; */
+}
+.block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px dashed #c88fe1;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    overflow: hidden;
+}
+.AtomName{
+    font-size: x-large;
+}
+button.other {
+    padding: 1em;
+    outline: none;
+    border: none;
+    border-radius: 0.2em;
+    font-size: medium;
+    margin: 0 0.5em;
+    cursor:pointer;
+    background: #FFEB3B;
+    color: black;
+}
+.other:hover{
+    background: #c3c3c3;
+}
+.otherGrid {
+    height: 13%;
+    width: 99%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    bottom: 1%;
+}
+::-webkit-scrollbar{
+    visibility: hidden;
+}
