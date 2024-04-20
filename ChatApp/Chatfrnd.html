@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Friend</title>
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font-Awesome -->
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- Font -->
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- Google Font -->
+    <!-- Css File -->
+    <link rel="stylesheet" href="Chatfrnd.css">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <!-- head font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:wght@300&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 style="font-family: 'Platypi', serif;">Chat Hub</h1>
+    <div class="menu">
+        <i class="fa-solid fa-bars bars"></i>
+    </div>
+    <div class="settingBar">
+        <div class="aboutMe">
+            <h3>General</h3>
+            <ul>
+                <li>
+                    <div class="profile listItem">
+                            <lord-icon
+                            src="https://cdn.lordicon.com/ylvuooxd.json"
+                            trigger="hover">
+                            </lord-icon>
+                        <span style="padding-left: 0.5em;">Change Username</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="nickname listItem">
+                            <lord-icon
+                            src="https://cdn.lordicon.com/pdsourfn.json"
+                            trigger="hover">
+                            </lord-icon>
+                        <span style="padding-left: 0.5em;">Add Nickname</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="profilepic listItem">
+                            <lord-icon
+                            src="https://cdn.lordicon.com/vneufqmz.json"
+                            trigger="hover">
+                            </lord-icon>
+                        <span style="padding-left: 0.5em;">Change Profile Picture</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="theme listItem">
+                            <lord-icon
+                            src="https://cdn.lordicon.com/hmqggwrl.json"
+                            trigger="hover">
+                            </lord-icon>
+                        <span style="padding-left: 0.5em;">Theme</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="updates listItem">
+                            <lord-icon
+                            src="https://cdn.lordicon.com/tmqaflqo.json"
+                            trigger="hover">
+                            </lord-icon>
+                        <span style="padding-left: 0.5em;">Check Updates</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="chats">
+            <h3>Chats</h3>
+            <ul>
+                <li>
+                    <div class="deleteChats listItem">
+                            <lord-icon
+                                src="https://cdn.lordicon.com/hjbrplwk.json"
+                                trigger="hover">
+                            </lord-icon>
+                        <span style="padding-left: 0.5em;">Delete Chats</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="chatsBackup listItem">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/vhyuhmbl.json"
+                            trigger="hover">
+                        </lord-icon>
+                        <span style="padding-left: 0.5em;">Chats Backup</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="RestoreChats listItem">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/yqiuuheo.json"
+                            trigger="hover"
+                            state="hover-unfold">
+                        </lord-icon>
+                        <span style="padding-left: 0.5em;">Restore Chats</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="aboutMe">
+            <h3>About me</h3>
+            <ul>
+                <li>
+                    <div class="privacyPolicy listItem">
+                        <lord-icon
+                        src="https://cdn.lordicon.com/yideukey.json"
+                        trigger="hover">
+                        </lord-icon>
+                        <a target="_main" href="https://github.com/AnshulVishwa">My Github account</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="collection"></div>
+    </div>
+    <div class="chatSection">
+        <section class="section1" >
+            <div class="form">
+                <div class="upper">
+                    <div class="img">
+                        <img class="avimg" src = "https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg">
+                    </div>
+                    <div class="username avatar">
+                        <span class="username">1st Person</span>
+                    </div>
+                </div>
+                <div class="middle"></div>
+                <div class="lower">
+                    <div class="inputMsg">
+                        <input id="input" placeholder="Enter Your Message" type="text">
+                        <button id="btn">
+                            <i id="plane-logo" class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="section2" >
+            <div class="form2">
+                <div class="upper2">
+                    <div class="img">
+                        <img class="avimg2" src="https://thumbs.dreamstime.com/b/cute-girl-hacker-laptop-avatar-cartoon-style-black-backdrop-generative-ai-cute-girl-hacker-laptop-avatar-cartoon-274478747.jpg">
+                    </div>
+                    <div class="username2 avatar">2nd person</div>
+                </div>
+                <div class="middle2"></div>
+                <div class="lower2">
+                    <div class="inputMsg">
+                        <input id="input2" required placeholder="Enter Your Message" type="text">
+                        <button id="btn2">
+                            <i id="plane-logo2" class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+<script src="settingMenu.js"></script>
+<script src="Chatfrnd.js"></script>

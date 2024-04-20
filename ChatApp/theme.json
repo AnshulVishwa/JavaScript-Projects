@@ -1,0 +1,125 @@
+[
+    {
+        "imgName" : "Default"
+    },
+    {
+        "imgName" : "Nature",
+        "src" : "theme/nature.jpg",
+        "vidhi" : {
+            "background" : "#151932c6",
+            "color" : "#fff"
+        },
+        "anshul" : {
+            "background" : "#151932",
+            "color" : "#fff"
+        },
+        "avatar" : "BLACK",
+        "middle" : "BLACK",
+        "nav" : "BLACK"
+    },
+    {
+        "imgName" : "Cartoon",
+        "src" : "theme/cartoon-nature.jpg",
+        "vidhi" : {
+            "background" : "#0c5798",
+            "color" : "white"
+        },
+        "anshul" : {
+            "background" : "#fff",
+            "color" : "black"
+        },
+        "avatar" : "white",
+        "middle" : "white",
+        "nav" : "white"
+    },
+    {
+        "imgName" : "Moon",
+        "src" : "theme/moon.jpg",
+        "vidhi" : {
+            "background" : "rgb(62 78 201)",
+            "color" : "#fff"
+        },
+        "anshul" : {
+            "background" : "#757ec3",
+            "color" : "#fff"
+        },
+        "avatar" : "white",
+        "middle" : "white",
+        "nav" : "white"
+    },
+    {
+        "imgName" : "Love",
+        "src" : "theme/love.jpg",
+        "vidhi" : {
+            "background" : "#d20000",
+            "color" : "#fff"
+        },
+        "anshul" : {
+            "background" : "#d200006e",
+            "color" : "#212121"
+        },
+        "avatar" : "BLACK",
+        "middle" : "BLACK",
+        "nav" : "BLACK"
+    },
+    {
+        "imgName" : "Space",
+        "src" : "theme/space.jpg",
+        "vidhi" : {
+            "background" : "white",
+            "color" : "black"
+        },
+        "anshul" : {
+            "background" : "#000",
+            "color" : "white"
+        },
+        "avatar" : "#fff",
+        "middle" : "#fff",
+        "nav" : "#fff"
+    },
+    {
+        "imgName" : "Night Sky",
+        "src" : "theme/night-sky.jpg",
+        "vidhi" : {
+            "background" : "#fff",
+            "color" : "#000"
+        },
+        "anshul" : {
+            "background" : "#02000b",
+            "color" : "#fff"
+        },
+        "avatar" : "white",
+        "middle" : "white",
+        "nav" : "WHITE"
+    },
+    {
+        "imgName" : "Planet",
+        "src" : "theme/planet.jpg",
+        "vidhi" : {
+            "background" : "white",
+            "color" : "black"
+        },
+        "anshul" : {
+            "background" : "rgb(157 157 157)",
+            "color" : "black"
+        },
+        "avatar" : "white",
+        "middle" : "white",
+        "nav" : "white"
+    },
+    {
+        "imgName" : "Water",
+        "src" : "theme/water.jpg",
+        "vidhi" : {
+            "background" : "rgb(0 0 0)",
+            "color" : "#fff"
+        },
+        "anshul" : {
+            "background" : "#dddddd",
+            "color" : "black"
+        },
+        "avatar" : "white",
+        "middle" : "black",
+        "nav" : "white"
+    }
+]
