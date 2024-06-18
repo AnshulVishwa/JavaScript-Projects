@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&family=Poetsen+One&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Binary Number System</h1>
+    <main>
+        <section>
+            <div class="inputBox">
+                <label for="input"></label>
+                <input id="input" placeholder="Enter a Number" name="input" type="text">
+            </div>
+            <div class="inputBox">
+                <select id="base">
+                    <option value="2">Binary</option>
+                    <option value="10">Decimal</option>
+                    <option value="8">Octal</option>
+                    <option value="16">Hexadecimal</option>
+                </select>
+            </div>
+            <div class="inputBox">
+                <select id="convert">
+                    <option value="2">Binary</option>
+                    <option value="10">Decimal</option>
+                    <option value="8">Octal</option>
+                    <option value="16">Hexadecimal</option>
+                </select>
+            </div>
+            <button>Generate</button>
+            <span id="show"></span>
+        </section>
+    </main>
+</body>
+</html>
+<script src="logic.js"></script>

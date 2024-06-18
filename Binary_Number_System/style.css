@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #212121;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(img.jpg);
+    background-size: cover;
+}
+section{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;    
+}
+h1 {
+    text-align: center;
+    font-weight: 700;
+}
+main {
+    height: 50%;
+    width: 50%;
+}
+label {
+    font-size: larger;
+}
+span#show {
+    font-size: xx-large;
+    height: 1px;
+}
+button {
+    padding: 1em;
+    border-radius: 0.5em;
+    outline: none;
+    border: none;
+    background: #E3F2FD;
+    color: black;
+    font-size: large;
+    /* font-family: system-ui; */
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+#input , #base , #convert {
+    border: none;
+    outline: none;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: x-large;
+}
+.inputBox{
+    display: flex;
+}
+select , option{
+    background: #212121;
+    color: white;
+}
+option{
+    padding: 0.2em;
+}
