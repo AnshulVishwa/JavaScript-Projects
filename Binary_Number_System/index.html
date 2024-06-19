@@ -16,28 +16,34 @@
     <h1>Binary Number System</h1>
     <main>
         <section>
-            <div class="inputBox">
-                <label for="input"></label>
-                <input id="input" placeholder="Enter a Number" name="input" type="text">
+            <div class="upper">
+                <div class="inputBox">
+                    <label for="input"></label>
+                    <input id="input" placeholder="Enter a Number" name="input" type="text">
+                </div>
+                <div class="inputBox">
+                    <select id="base">
+                        <option value="2">Binary</option>
+                        <option value="10">Decimal</option>
+                        <option value="8">Octal</option>
+                        <option value="16">Hexadecimal</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <select id="convert">
+                        <option value="2">Binary</option>
+                        <option value="10">Decimal</option>
+                        <option value="8">Octal</option>
+                        <option value="16">Hexadecimal</option>
+                    </select>
+                </div>
             </div>
-            <div class="inputBox">
-                <select id="base">
-                    <option value="2">Binary</option>
-                    <option value="10">Decimal</option>
-                    <option value="8">Octal</option>
-                    <option value="16">Hexadecimal</option>
-                </select>
+            <div class="lower">
+                <button>Generate</button>
+                <div class="showDiv">
+                    <span id="show"></span>
+                </div>
             </div>
-            <div class="inputBox">
-                <select id="convert">
-                    <option value="2">Binary</option>
-                    <option value="10">Decimal</option>
-                    <option value="8">Octal</option>
-                    <option value="16">Hexadecimal</option>
-                </select>
-            </div>
-            <button>Generate</button>
-            <span id="show"></span>
         </section>
     </main>
 </body>

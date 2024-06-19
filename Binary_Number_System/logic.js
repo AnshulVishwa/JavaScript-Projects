@@ -3,8 +3,27 @@ const btn = document.querySelector("button")
 const show = document.getElementById("show")
 const base = document.getElementById("base")
 const convert = document.getElementById("convert")
+const showDiv = document.querySelector(".showDiv")
 
 let result = "";
+
+function copyResult(){
+    let p = document.querySelector("p")
+    if(showDiv.contains(document.querySelector(".copyBtn"))){
+        showDiv.removeChild(document.querySelector(".copyBtn"))
+    }
+    const btn = document.createElement("button")
+    btn.classList.add("copyBtn")
+    btn.style.transition = "1s"
+    btn.textContent = "Copy Result"
+    showDiv.appendChild(btn)
+    btn.addEventListener("click",()=>{
+        navigator.clipboard.writeText(p.textContent)
+        btn.textContent = "Copied"
+        btn.style.background = "#212121"
+        btn.style.color = "white"
+    })
+}
 
 function ten_Two( r , v ){
 
@@ -19,8 +38,11 @@ function ten_Two( r , v ){
         for( let i = 0 ; i < r.length ; i++ ){
             final += String(r[i])
         }
-        show.innerHTML = `( ${final} ) <sub>2</sub>`
-        r = final    
+        
+        show.innerHTML = `( <p>${final}</p> ) <sub>2</sub>`
+        copyResult()
+        r = final
+        // console.log(showDiv.contains(document.querySelector(".showDiv")))    
         return r;
     } 
     else{
@@ -45,12 +67,25 @@ function Eight_Two_Sixteen( r , v , b ){
     }
     if( b == 16 ){
         for( let i = 0 , j = v.length-1 ; i < v.length && j >= 0 ; i++ , j-- ){
-            let a = parseInt(v[j]) * Math.pow(16,i)
+            let vidhi = v[j]
+            vidhi = String(vidhi)
+            switch( vidhi ){
+                case "A" : vidhi = 10;break;
+                case "B" : vidhi = 11;break;
+                case "C" : vidhi = 12;break;
+                case "D" : vidhi = 13;break;
+                case "E" : vidhi = 14;break;
+                case "F" : vidhi = 15;break;
+           }
+
+            let a = parseInt(vidhi) * Math.pow(16,i)
             r += a
         }
     }
     let newStr = String(r)
+    
     show.innerHTML = `( ${newStr} )<sub>${b}</sub>`
+    copyResult()
     return newStr
 }
 
@@ -68,7 +103,9 @@ function ten_Eight( r , v ){
         for( let i = 0 ; i < r.length ; i++ ){
             final += String(r[i])
         }
+        
         show.innerHTML = `( ${final} ) <sub>8</sub>`
+        copyResult()
         return final
     } 
     return ten_Eight( r , v )
@@ -88,22 +125,21 @@ function makeItToThree(vom){
 
 function Two_Eight( r , v ){
     v = new String(v)
-    
     v = makeItToThree(v)
     let allGrps = []
     for( let i = 0 ; i < v.length ; i = i+3 ){
         let add = `${v[i]}${v[i+1]}${v[i+2]}`
         allGrps.push( add )
-        // console.log(allGrps)
     }
 
     let ans = ""
     allGrps.map( ( e , i ) => {
         let r = ""
         ans += Eight_Two_Sixteen( r , parseInt(e) , 2 )
-        // console.log(ans)
     })
+    
     show.innerHTML = `( ${ans} ) <sub>8</sub>`
+    copyResult()
     return ans 
 }
 function makeItToFour(vom){
@@ -126,7 +162,9 @@ function Eight_Two( r , v ){
         ans = makeItToThree(ans)
         r += ans
     }
+    
     show.innerHTML = `( ${r} ) <sub>2</sub>` 
+    copyResult()
     return r;
 }
 function Sixteen_Two( r , v ){
@@ -141,28 +179,25 @@ function Sixteen_Two( r , v ){
              case "D" : vidhi = 13;break;
              case "E" : vidhi = 14;break;
              case "F" : vidhi = 15;break;
-             case 'A' : vidhi = 10;break;
-             case 'B' : vidhi = 11;break;
-             case 'C' : vidhi = 12;break;
-             case 'D' : vidhi = 13;break;
-             case 'E' : vidhi = 14;break;
-             case 'F' : vidhi = 15;break;
         }
         let ans = ""
-        // console.log(vidhi)
         ans = ten_Two( ans , parseInt( vidhi ) )
         ans = makeItToFour(ans)
         r += ans
     }
+    
     show.innerHTML = `( ${r} ) <sub>2</sub>`  
+    copyResult()
     return r;
 }
 
 function Sixteen_Eight( re , ve ){
     let binary = Sixteen_Two( re , ve )
     re = Two_Eight( re , binary )
-    show.innerHTML = `( ${re} ) <sub>8</sub>`
     
+    show.innerHTML = `( ${re} ) <sub>8</sub>`
+    copyResult()
+
 }
 
 function Ten_Sixteen(r, v) {
@@ -193,7 +228,9 @@ function Ten_Sixteen(r, v) {
         }
         r += `${v}`
         let hexString = r.split('').reverse().join('');
+        
         show.innerHTML = `( ${hexString} ) <sub>16</sub>`;
+        copyResult()
         return hexString;
     }
     return Ten_Sixteen(r, v);
@@ -207,7 +244,6 @@ function Two_Sixteen( r , v ){
     for( let i = 0 ; i < v.length ; i = i+4 ){
             let add = `${v[i]}${v[i+1]}${v[i+2]}${v[i+3]}`
             allGrps.push( add )
-            // console.log(allGrps)
     }
     allGrps.map( ( e , i ) => {
         console.log(e)
@@ -226,7 +262,9 @@ function Two_Sixteen( r , v ){
         r += abc 
     })
     
+    
     show.innerHTML = `( ${r} ) <sub>16</sub>`
+    copyResult()
     return r;
 }
 
@@ -236,10 +274,19 @@ function Eight_Sixteen( re , ve ){
     console.log("binary = " + binary)
     let a = ""
     let ans = Two_Sixteen( a , binary )
+    
     show.innerHTML = `( ${ans} ) <sub>16</sub>`
-}
+copyResult()}
+
 
 btn.addEventListener("click",()=>{
+
+    if( input.value == null || input.value == undefined || input.value == "" ) {
+        alert( "Enter a valid Number to convert" )
+        setTimeout( ()=>{
+            window.location.reload()
+        } , 0)
+    }
 
     if( base.value == 2 && convert.value == 8 ) Two_Eight(result , input.value )
     if( base.value == 2 && convert.value == 10 ) Eight_Two_Sixteen(result , input.value , base.value )
@@ -256,4 +303,5 @@ btn.addEventListener("click",()=>{
     if( base.value == 16 && convert.value == 2 ) Sixteen_Two(result , input.value )
     if( base.value == 16 && convert.value == 8 ) Sixteen_Eight(result , input.value )
     if( base.value == 16 && convert.value == 10 ) Eight_Two_Sixteen(result , input.value , base.value )
+
 })
