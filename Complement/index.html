@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>One's and Two's Complement</h1>
+    </header>
+    <main>
+        <div class="inputBox">
+            <div class="input1up">0</div>
+            <input type="number" onChange = "changeValue()" value="0" class="input1">
+            <div class="input1down">0</div>
+        </div>
+        <div class="selectBox">
+            <select class="plusOrMinus">
+                <option value="-">-</option>
+                <option value="+">+</option>
+            </select>
+        </div>
+        <div class="input2Box">
+            <div class="input2up">0</div>
+            <input type="number" onChange = "changeValue()" value="0" class="input2">
+            <div class="input2down">0</div>
+        </div>
+    
+        <div class="select2Box">
+            <select id="addUsing">
+                <option value="1">One's Complement </option>
+                <option value="2">Two's Complement </option>
+            </select>
+        </div>
+        <div class="showSection">
+            <button class="btn">Generate</button>
+            <div class="show"></div>
+        </div>
+    </main>
+</body>
+</html>
+<script src="script.js"></script>

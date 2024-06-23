@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #212121;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main {
+    height: 75%;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+button.btn {
+    padding: 1em;
+    border-radius: 0.5em;
+    outline: none;
+    border: none;
+    background: #FFB300;
+}
+.showSection {
+    height: 23%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    font-size: x-large;
+}
+input.input1, .input2 {
+    border: none;
+    outline: none;
+    text-align: center;
+    background: none;
+    color: white;
+    font-size: x-large;
+}
+option{
+    background-color: #212121;
+    padding: 0.5em;
+}
+select#addUsing , .plusOrMinus {
+    border: none;
+    outline: none;
+    padding: 0.8em;
+    border-radius: 0.5em;
+    background: transparent;
+    box-shadow: 0 0 10px white, inset 0 0 10px white;
+    color: white;
+    font-weight: 700;
+}
+input , select {
+    border: none;
+    outline: none;
+    width:fit-content ;
+}
+.input1::-webkit-outer-spin-button,
+.input2::-webkit-inner-spin-button,
+.input1::-webkit-inner-spin-button,
+.input2::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.form-select {
+    --bs-form-select-bg-img: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e);
+    display: block;
+    width: fit-content;
+    padding: .375rem 2.25rem .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-image: var(--bs-form-select-bg-img), var(--bs-form-select-bg-icon, none);
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    background-size: 16px 12px;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.change {
+    font-size: x-large;
+}
+.input1up, .input1down, .input2up, .input2down {
+    text-align: center;
+    animation: animationUp 0.5s ease-in-out;
+}
+.inputBox, .input2Box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 30%;
+}
+
+@keyframes animationUp{
+    0%{
+        position: relative;
+        bottom: 10px;
+        opacity: 0;
+    }
+    100%{
+        position: relative;
+        bottom: 0px;
+        opacity: 1;
+    }
+}
