@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./Component/home.png");
+    background-size: cover;
+}
+header{
+    height: 15%;
+    width: 100%;
+}
+.navbar {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brand {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img.logo {
+    height: 65%;
+}
+.name {
+    font-family: "Caveat";
+    font-weight: bolder;
+}
+.startmsg {
+    width: 50%;
+    text-align: center;
+    font-size: medium;
+}
+.info{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 60%;
+    padding: 0% 5%;
+    border: 3px solid #97d0ef;
+    border-radius: 10px;
+}
+label {
+    font-size: larger;
+}
+input[type="text"] {
+    border: none;
+    outline: none;
+    font-size: large;
+    padding: 1em;
+    margin-left: 0.5em;
+    border-radius: 0.5em;
+    background: #b8d7e8;
+}
