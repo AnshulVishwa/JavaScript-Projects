@@ -71,13 +71,15 @@ label {
     text-align: center;
 }
 input[type="text"] {
-    border: none;
+    /* border: none; */
     outline: none;
     font-size: large;
     padding: 1em;
     margin-left: 0.5em;
     border-radius: 0.5em;
-    background: #b8d7e8;
+    background: #e6effe;
+    border: 1px solid #03a9f4;
+    box-shadow: 2px 2px 5px #03a9f4, inset 0 0 20px #03a9f4;
 }
 button.submitBtn {
     width: 5em;
@@ -85,6 +87,11 @@ button.submitBtn {
     border-radius: 0.5em;
     border: 1px solid #03A9F4;
     outline: none;
-    background: #b8d7e8;
-    box-shadow: 0 0 5px #B3E5FC, inset 0 0 5px #b3e5fc;
+    background: #e6effe;
+    box-shadow: 2px 2px 5px #03a9f4, inset 0 0 20px #03a9f4;
+}
+.button {
+    width: 82%;
+    display: flex;
+    justify-content: center;
 }
