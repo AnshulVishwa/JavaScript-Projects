@@ -79,3 +79,12 @@ input[type="text"] {
     border-radius: 0.5em;
     background: #b8d7e8;
 }
+button.submitBtn {
+    width: 5em;
+    padding: 0.8em 0em;
+    border-radius: 0.5em;
+    border: 1px solid #03A9F4;
+    outline: none;
+    background: #b8d7e8;
+    box-shadow: 0 0 5px #B3E5FC, inset 0 0 5px #b3e5fc;
+}
