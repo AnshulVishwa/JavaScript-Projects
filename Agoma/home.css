@@ -66,6 +66,9 @@ section.mainContent {
 }
 label {
     font-size: larger;
+    width: 1em;
+    display: inline-block;
+    text-align: center;
 }
 input[type="text"] {
     border: none;
