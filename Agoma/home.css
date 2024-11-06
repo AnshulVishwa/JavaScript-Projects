@@ -82,7 +82,7 @@ input[type="text"] {
     box-shadow: 2px 2px 5px #03a9f4, inset 0 0 20px #03a9f4;
 }
 button.submitBtn {
-    width: 5em;
+    width: 9em;
     padding: 0.8em 0em;
     border-radius: 0.5em;
     border: 1px solid #03A9F4;
@@ -91,7 +91,7 @@ button.submitBtn {
     box-shadow: 2px 2px 5px #03a9f4, inset 0 0 20px #03a9f4;
 }
 .button {
-    width: 82%;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
