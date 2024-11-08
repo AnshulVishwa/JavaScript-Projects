@@ -25,8 +25,9 @@ function alert( text , color , color2 , symbol ){
 }
 
 // automated value of alias
-// -> Firstly check if the input is filled
+// if the input value is filled then only
 nameInput.addEventListener( "change" , () => {
+    // split the value in two parts First name and Last name, add First name in alias
     const aliasValue = nameInput.value.split(" ")[0]
     aliasInput.value = aliasValue
 } )
@@ -52,5 +53,8 @@ submitBtn.addEventListener( "click" , (e)=>{
     }
     else{
         alert(`Thanks, ${aliasInput.value}` , '#673ab7' , "transparent" , "fa-regular fa-chess-king")
+        setTimeout( ()=>{
+            window.location.href = "mainPage.html"
+        } , 2000 )
     }
 } )
