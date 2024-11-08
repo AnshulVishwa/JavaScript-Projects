@@ -24,7 +24,7 @@ function alert( text , color , color2 , symbol ){
     } , 4000 )
 
 }
-
+nameInput.value.addEventListener
 // Submit Button 
 submitBtn.addEventListener( "click" , (e)=>{
     e.preventDefault();
