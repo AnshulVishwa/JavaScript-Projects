@@ -22,13 +22,14 @@ function alert( text , color , color2 , symbol ){
     setTimeout( ()=>{
         alertDiv.style.display = "none"
     } , 4000 )
-
 }
 
 // automated value of alias
-// if( nameInput.value != null || nameInput.value != "" ){
-//     aliasInput.value = nameInput.value
-// }
+// -> Firstly check if the input is filled
+nameInput.addEventListener( "change" , () => {
+    const aliasValue = nameInput.value.split(" ")[0]
+    aliasInput.value = aliasValue
+} )
 
 // Submit Button 
 submitBtn.addEventListener( "click" , (e)=>{
