@@ -10,6 +10,7 @@ body {
     width: 100vw;
     background-image: url("./Component/home.png");
     background-size: cover;
+    overflow-x: hidden;
 }
 header{
     height: 15%;
@@ -94,4 +95,36 @@ button.submitBtn {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+.alert {
+    position: absolute;
+    right: -16em;
+    border-radius: 10px;
+    padding: 1em;
+    width: 14%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 1%;
+    opacity: 0;
+    animation: alertAnimation 4s ease-in-out 1;
+    box-shadow: 0 0 10px white, inset 0 0 17px white;
+    display: none;
+}
+@keyframes alertAnimation {
+    0%{
+        opacity: 0;
+        right: -16em;
+    }
+    10%,80%{
+        opacity: 1;
+        right: 0;
+    }
+    90%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+        right: -16em;
+    }
 }
