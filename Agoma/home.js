@@ -24,7 +24,12 @@ function alert( text , color , color2 , symbol ){
     } , 4000 )
 
 }
-nameInput.value.addEventListener
+
+// automated value of alias
+// if( nameInput.value != null || nameInput.value != "" ){
+//     aliasInput.value = nameInput.value
+// }
+
 // Submit Button 
 submitBtn.addEventListener( "click" , (e)=>{
     e.preventDefault();
