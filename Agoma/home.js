@@ -34,7 +34,6 @@ if( nameInput != null && submitBtn != null ){
         // split the value in two parts First name and Last name, add First name in alias
         aliasValue = nameInput.value.split(" ")[0]
         aliasInput.value = aliasValue
-        console.log(aliasValue)
     } )
     
     // Submit Button 
