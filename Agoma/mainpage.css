@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./Component/background.jpg");
+    background-size: cover;
+    overflow: hidden;
+    color: white;
+}
+.cover {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: black;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.content{
+    position: relative;
+    z-index: +1;
+    height: 100vh;
+    width: 100vw;
+}
+nav.navbar {
+    height: 7em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid white ;
+}
+.brand {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+.image-logo{
+    height: 80%;
+}
+.brandName{
+    font-family: "Caveat";
+    font-weight: bolder;
+}
+.heading {
+    font-size: x-large;
+}
+.setting {
+    transform: scale(1.5);
+    animation: rotateSetting 2s linear infinite  ;
+}
+@keyframes rotateSetting {
+    0%{
+        transform: scale(1.5) rotate(0deg);
+    }
+    50%{
+        transform: scale(1.8) rotate(180deg);
+    }
+    100%{
+        transform: scale(1.5) rotate(360deg);
+    }
+}
