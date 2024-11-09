@@ -133,24 +133,10 @@ section.right {
     height: 85%;
     width: 70%;
     border: 1px solid white;
-    /* background: red; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-}
-.previousDocs {
-    /* background: #7fff00; */
-    height: 80%;
-    width: 90%;
-}
-.previous {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: start;
-    width: 90%;
-    font-size: larger;
 }
 .borderLine {
     height: 2px;
@@ -160,4 +146,44 @@ section.right {
 }
 .heading {
     font-size: larger;
+}
+.previousDocs {
+    height: 80%;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.previous {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    width: 90%;
+    font-size: larger;
+}
+.Docs {
+    height: 35%;
+    width: 13%;
+    border: 2px solid white;
+    border-radius: 1em;
+    padding: 1em;
+    margin: 0 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.Docs:hover{
+    box-shadow: 0 0 10px white , inset 0 0 10px white;
+}
+.coverPage {
+    background: white;
+    height: 80%;
+    width: 100%;
+    border-radius: 5px;
+}
+.title {
+    text-align: center;
 }
