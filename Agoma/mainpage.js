@@ -3,7 +3,7 @@ const span = document.createElement("span")
 const allListContent = document.querySelectorAll(".icon")
 const previousDocs = document.querySelector(".previousDocs")
 
-let totalDocs = 10
+let totalDocs = 20
 
 for( let i = 0 ; i < totalDocs ; i++ ){
     const create = document.createElement("div")
@@ -17,6 +17,17 @@ for( let i = 0 ; i < totalDocs ; i++ ){
     create.appendChild(title)
     previousDocs.appendChild(create)
 }
+if( totalDocs == 0 ){
+    const heading = document.createElement("div")
+    heading.textContent = "No previous Document availble"
+    previousDocs.appendChild(heading)
+}
+else if( totalDocs > 8 ) { 
+    const arrowUp = document.createElement("div")
+    const arrowDown = document.createElement("div")
+       
+}
+
 allListContent.forEach( (each) => {
     each.parentElement.addEventListener( "mouseover" , () => {
         each.id = "rotate"
