@@ -50,12 +50,10 @@ nav.navbar {
     font-family: "Caveat";
     font-weight: bolder;
 }
-.heading {
-    font-size: x-large;
-}
+
 .setting {
     transform: scale(1.5);
-    animation: rotateSetting 2s linear infinite  ;
+    animation: rotateSetting 2s linear infinite ;
 }
 @keyframes rotateSetting {
     0%{
@@ -67,4 +65,75 @@ nav.navbar {
     100%{
         transform: scale(1.5) rotate(360deg);
     }
+}
+.lower{
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.left {
+    height: 85%;
+    width: 25%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.content_list , .createNew , .greet , .dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    width: 70%;
+}
+.heading , .dashboard{
+    font-size: x-large;
+}
+.content_list{
+    height: 50%;
+}
+#rotate{
+    animation: rotateIcon 2s linear infinite ;
+}
+@keyframes rotateIcon {
+    0%{
+        transform:rotate(0deg);
+    }
+    50%{
+        transform:rotate(180deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+.content_item{
+    cursor: pointer;
+    width: 50%;
+}
+.icon{
+    margin-right: 1em;
+}
+section.right {
+    height: 85%;
+    width: 70%;
+    border: 1px solid white;
+    background: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.previousDocs {
+    background: #7fff00;
+    height: 80%;
+    width: 90%;
+}
+.previous {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    width: 90%;
 }
