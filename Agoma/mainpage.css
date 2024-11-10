@@ -196,3 +196,22 @@ section.right {
 .previousDocs::-webkit-scrollbar {
     display: none;
 }
+.arrows {
+    position: absolute;
+    right: 3.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7em;
+    flex-direction: column;
+}
+.arrowUp, .arrowDown {
+    border-radius: 50%;
+    border: 2px solid white;
+    height: 2em;
+    width: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: border-box;
+}
