@@ -11,11 +11,19 @@ for( let i = 0 ; i < totalDocs ; i++ ){
     const create = document.createElement("div")
     create.classList.add("Docs")
     create.id = `Doc${i+1}`
+    
     const cover = document.createElement("div")
     cover.classList.add("coverPage")
+    
     const title = document.createElement("div")
     title.classList.add("title")
     title.textContent = `Doc ${i+1}`
+    
+    const deleteDoc = document.createElement("div")
+    deleteDoc.classList.add("deleteDoc")
+    deleteDoc.innerHTML = '<i class="fa-solid fa-ban"></i>'
+
+    create.appendChild(deleteDoc)
     create.appendChild(cover)
     create.appendChild(title)
     previousDocs.appendChild(create)
@@ -45,6 +53,16 @@ else if( totalDocs > 8 ) {
         document.querySelector(`#Doc${totalDocs}`).scrollIntoView({behavior:"smooth"})
     } )
 }
+
+const allDocument = document.querySelectorAll(".Docs")
+allDocument.forEach( (each) => {
+    each.addEventListener( "mouseover" , ()=>{
+        document.querySelector(".deleteDoc").classList.add("showDelete")
+    } )
+    each.addEventListener( "mouseout" , ()=>{
+        document.querySelector(".deleteDoc").classList.remove("showDelete")
+    } )
+} )
 
 allListContent.forEach( (each) => {
     each.parentElement.addEventListener( "mouseover" , () => {

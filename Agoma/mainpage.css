@@ -215,3 +215,15 @@ section.right {
     align-items: center;
     background: border-box;
 }
+.deleteDoc {
+    height: 0;
+    color: red;
+    z-index: 1;
+    position: relative;
+    left: 3em;
+    top: 0.5em;
+    display: none;
+}
+.showDelete{
+    display: block;
+}
