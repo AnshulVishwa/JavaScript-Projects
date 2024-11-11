@@ -69,7 +69,7 @@ allListContent.forEach( (each) => {
         each.id = "rotate"
     } )
     each.parentElement.addEventListener( "mouseout" , () => {
-        each.id = undefined;
+        each.id = null;
     } )
 } )
 
