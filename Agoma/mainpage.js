@@ -1,38 +1,47 @@
+document.addEventListener("DOMContentLoaded", (event) => {
+    console.log("DOM fully loaded and parsed");
+    document.body.style.backgroundImage = "url(./Component/background.jpg)"
+  });
+  
+
+// Declarations
 const greet = document.querySelector(".greet")
 const span = document.createElement("span")
 const allListContent = document.querySelectorAll(".icon")
 const previousDocs = document.querySelector(".previousDocs")
 const arrows = document.querySelector(".arrows")
 const toTop = document.querySelector(".box")
+document.addEventListener()
 
+// count of total pre docs available
 let totalDocs = 15
 
+// Loop to show the Documents
 for( let i = 0 ; i < totalDocs ; i++ ){
+    // Outer div for docs
     const create = document.createElement("div")
     create.classList.add("Docs")
     create.id = `Doc${i+1}`
-    
+    // cover page for docs
     const cover = document.createElement("div")
     cover.classList.add("coverPage")
-    
+    // name or title div for docs
     const title = document.createElement("div")
     title.classList.add("title")
     title.textContent = `Doc ${i+1}`
-    
-    const deleteDoc = document.createElement("div")
-    deleteDoc.classList.add("deleteDoc")
-    deleteDoc.innerHTML = '<i class="fa-solid fa-ban"></i>'
 
-    create.appendChild(deleteDoc)
+    // appending divs to HTML page
     create.appendChild(cover)
     create.appendChild(title)
     previousDocs.appendChild(create)
 }
+// if the previous docs are null, then show a heading "No previous Document availble"
 if( totalDocs == 0 ){
     const heading = document.createElement("div")
     heading.textContent = "No previous Document availble"
     previousDocs.appendChild(heading)
 }
+// if the docs are more than 8, show arrows for up down
 else if( totalDocs > 8 ) { 
     const arrowUp = document.createElement("div")
     const arrowDown = document.createElement("div")
@@ -54,16 +63,7 @@ else if( totalDocs > 8 ) {
     } )
 }
 
-const allDocument = document.querySelectorAll(".Docs")
-allDocument.forEach( (each) => {
-    each.addEventListener( "mouseover" , ()=>{
-        document.querySelector(".deleteDoc").classList.add("showDelete")
-    } )
-    each.addEventListener( "mouseout" , ()=>{
-        document.querySelector(".deleteDoc").classList.remove("showDelete")
-    } )
-} )
-
+// if hover to list content, then rotate symbol
 allListContent.forEach( (each) => {
     each.parentElement.addEventListener( "mouseover" , () => {
         each.id = "rotate"
@@ -73,5 +73,6 @@ allListContent.forEach( (each) => {
     } )
 } )
 
+// at last write a name of alias
 span.textContent = "Welcome, " + sessionStorage.getItem("alias") + " ✨"
 greet.appendChild(span)
