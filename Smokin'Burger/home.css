@@ -8,6 +8,10 @@ html , body{
     overflow-x: hidden;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
+
 .flex{
     display: flex;
     justify-content: center;
@@ -32,7 +36,7 @@ html , body{
     justify-content: space-evenly;
     color: #212121;
     margin-top: 1em;
-    animation: incomingNavAnimation 1.5s ease-in-out 1;
+    animation: none;
 }
 
 span.bigger {
@@ -77,7 +81,7 @@ i.fa-solid.fa-magnifying-glass {
     font-size: xxx-large;
     width: 100%;
     color: #2B2B2B;
-    animation: textAnimation 1.5s ease-in-out 1;
+    animation: textAnimation 1s ease-in-out 1;
 }
 
 .text1{
@@ -93,7 +97,7 @@ i.fa-solid.fa-magnifying-glass {
 }
 
 img.backgroundImage {
-    animation: incomingAnimation 1.5s ease-in-out 1;
+    animation: none;
     height: 50%;
     position: relative;
     z-index: 5;
@@ -101,10 +105,9 @@ img.backgroundImage {
 
 @keyframes incomingAnimation {
     0% {
-        translate: -3em 3em;
+        translate: -2em 2em;
         opacity: 0;
     }
-    50%{ opacity: 0; }
     100%{
         translate: 0em 0em;
     }
@@ -112,6 +115,7 @@ img.backgroundImage {
 
 @keyframes incomingNavAnimation {
     0% {
+        translate: 0 1em ;
         opacity: 0;
     }
     100%{
@@ -147,16 +151,43 @@ img.backgroundImage {
 
 .contentDiv.flex {
     background: #3F221B;
-    height: 30%;
-    width: 25%;
+    /* height: 30%;
+    width: 25%; */
+    height: 10%;
+    width: 5%;
+    color: #3F221B;
     border-radius: 270em;
     color: white;
     font-weight: bold;
     font-size: x-large;
-    animation: incomingAnimation 1.5s ease-in-out 1;
+    animation: none;
     cursor: pointer;
 }
 a{
     text-decoration: none;
     color: white;
+}
+
+@keyframes chooseDibbaAnimation {
+    0%{
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes dibbaForVidhi {
+    0%{
+        translate:  0 -20em;
+    }
+}
+
+@keyframes endChooseDibbaAnimation {
+    100%{
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        opacity: 0;
+    }
 }

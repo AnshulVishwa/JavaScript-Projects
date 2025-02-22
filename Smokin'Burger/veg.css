@@ -59,7 +59,7 @@ button.go-on {
     border-radius: 100em;
     color: white;
     background: #3f221b;
-    animation: HideSomething 2s ease-in-out  1  ;
+    animation: buttonAnimation 1.5s ease-in-out  1;
 }
 span.text {
     font-size: x-large;
@@ -100,13 +100,13 @@ h2{
 }
 
 #box1{
-    animation: AnimateBoxes 2s ease-in-out 0.2s 1;
+    animation: AnimateBoxes 2.0s ease-in-out 1;
 }
 #box2{
-    animation: AnimateBoxes 2s ease-in-out 0.4s 1;
+    animation: AnimateBoxes 2.2s ease-in-out 1;
 }
 #box3{
-    animation: AnimateBoxes 2s ease-in-out 0.8s 1;
+    animation: AnimateBoxes 2.4s ease-in-out 1;
 }
 
 .box.style {
@@ -140,6 +140,8 @@ i.fa-solid.fa-circle {
 }
 
 .option:hover{
+    transition: all;
+    transition-duration:0.5s ;
     background-color: #E07A5F;
     cursor: pointer;
     box-shadow: 0 4px 4px #00000080;
@@ -182,5 +184,13 @@ a{
     75%{
         translate: 1em;
         transform: skewX(-5deg);
+    }
+}
+
+@keyframes buttonAnimation {
+    50%{
+        opacity: 0;
+        width: 0;
+        height: 0;
     }
 }

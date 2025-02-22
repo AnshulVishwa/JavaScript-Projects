@@ -26,7 +26,7 @@ html , body{
     height: 100%;
     width: 100%;
     background: rgba(255, 255, 255, 0.5);
-    justify-content: start;
+    justify-content: end;
 }
 
 section.section1 {
@@ -35,12 +35,14 @@ section.section1 {
     background: #3F221B;
     color: white;
     border-radius: 1000em 0 0 1000em;
+    animation: animateSectionBackground 1s ease-in-out 1;
 }
 section.section2 {
     height: 100%;
     width: 35%;
     flex-direction: column;
     justify-content: space-between;
+    animation: animateSectionBackground 1s ease-in-out 1;
 }
 
 .heading.flex {
@@ -58,6 +60,7 @@ button.go-on {
     border-radius: 100em;
     color: white;
     background: #3f221b;
+    animation: buttonAnimation 1.5s ease-in-out  1;
 }
 span.text {
     font-size: x-large;
@@ -81,9 +84,11 @@ h1 {
     padding: 1em;
     font-size: xx-large;
     margin-left: 5em;
+    animation: HideSomething 2s ease-in-out  1  ;
 }
 h2{
     text-shadow: 0 4px 4px #00000025;
+    animation: HideSomething 2s ease-in-out  1  ;
 }
 .mainContent {
     height: 80%;
@@ -141,5 +146,57 @@ span.OptionText {
 a{
     text-decoration: none;
     color: black;
+}
+
+#box1{
+    animation: AnimateBoxes 2.0s ease-in-out 1;
+}
+#box2{
+    animation: AnimateBoxes 2.2s ease-in-out 1;
+}
+#box3{
+    animation: AnimateBoxes 2.4s ease-in-out 1;
+}
+
+@keyframes animateSectionBackground {
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+}
+@keyframes HideSomething {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+@keyframes AnimateBoxes {
+    0%{
+        opacity: 0;
+        translate: -1em;
+    }
+    50%{
+        opacity: 0;
+        translate: -1em;
+        transform: skewX(5deg);
+    }
+    75%{
+        translate: 1em;
+        transform: skewX(-5deg);
+    }
+}
+
+@keyframes buttonAnimation {
+    50%{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+}
+
+.checkbox{
+    display: none;
 }
 
