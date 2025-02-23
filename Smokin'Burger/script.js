@@ -22,7 +22,7 @@ const observer = new IntersectionObserver((entries) => {
             }
 
             if( target.classList.contains("contentDiv") ){
-                target.style.animation = "dibbaForVidhi 1s ease-in-out 1"
+                target.style.animation = "chooseDibbaAnimation 1s ease-in-out 1"
                 
                 setTimeout(() => {
                     target.style.animation = "none";

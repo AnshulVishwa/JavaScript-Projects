@@ -151,10 +151,8 @@ img.backgroundImage {
 
 .contentDiv.flex {
     background: #3F221B;
-    /* height: 30%;
-    width: 25%; */
-    height: 10%;
-    width: 5%;
+    height: 30%;
+    width: 25%;
     color: #3F221B;
     border-radius: 270em;
     color: white;
@@ -174,12 +172,6 @@ a{
         height: 100vh;
         border-radius: 0;
         opacity: 0;
-    }
-}
-
-@keyframes dibbaForVidhi {
-    0%{
-        translate:  0 -20em;
     }
 }
 

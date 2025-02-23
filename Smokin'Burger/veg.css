@@ -208,3 +208,69 @@ label {
     margin-left: 0.5em;
     width: 100%;
 }
+
+
+/* Cart */
+.cart-option {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    background: #3f221b;
+    padding: 1em;
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: HideSomething 2s ease-in-out 1;
+    cursor: pointer;
+}
+
+.box-cart{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span.number {
+    height: 0;
+    width: 0;
+    position: relative;
+    top: -1em;
+    left: 1em;
+}
+
+/* Cart Box */
+.cart_box {
+    background: red;
+    display: flex
+;
+    width: 10em;
+    height: 20em;
+    width: 20em;
+    position: absolute;
+    top: 3em;
+    right: 2em;
+    border-radius: 1em;
+    justify-content: start;
+    align-items: center;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+.boxInside {
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    width: 20em;
+    height: 80%;
+    display: flex
+;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cart_box::-webkit-scrollbar{
+    scrollbar-width: thin;
+}
