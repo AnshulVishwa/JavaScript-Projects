@@ -142,7 +142,7 @@ i.fa-solid.fa-circle {
 .option:hover{
     transition: all;
     transition-duration:0.5s ;
-    background-color: #E07A5F;
+    background-color: #e78d75;
     cursor: pointer;
     box-shadow: 0 4px 4px #00000080;
 }
@@ -193,4 +193,18 @@ a{
         width: 0;
         height: 0;
     }
+}
+
+.checkbox{
+    display: none;;
+}
+
+.option:has( input:checked ){
+    background-color: #E07A5F;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px #00000080;
+}
+label {
+    margin-left: 0.5em;
+    width: 100%;
 }
