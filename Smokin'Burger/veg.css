@@ -274,3 +274,17 @@ span.number {
 .cart_box::-webkit-scrollbar{
     scrollbar-width: thin;
 }
+.icon_div {
+    position: absolute;
+    bottom: 0;
+    margin-left: 35%;
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #9b9b9b;
+}
+
+.boxInside:target ~ .icon_div span i {
+    color: yellow;
+}
