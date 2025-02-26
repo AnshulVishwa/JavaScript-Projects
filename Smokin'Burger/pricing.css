@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Braah One", serif;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./Files/background.png);
+    background-repeat: repeat;
+    background-size: 10%;
+}
+
+.background{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-color: rgba(255, 238, 180, 0.80);
+    z-index: 1;
+}
+
+main {
+    position: relative;
+    z-index: 5;
+    height: max(500px, 80%);
+    background: red;
+    width: min(40em, 30%);
+}
