@@ -1,5 +1,6 @@
 import './style.css'
 import * as THREE from 'three'
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 // Scene setup
 const scene = new THREE.Scene()
@@ -35,11 +36,13 @@ scene.add(directionalLight)
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.3)
 scene.add(ambientLight)
 
+const controls = new OrbitControls(camera , renderer.domElement)
+
 // Animation loop
 function animate() {
   requestAnimationFrame(animate)
-  moon.rotation.x += 0.01
-  moon.rotation.z += 0.01
+  moon.rotation.y += 0.01
+  controls.update()
   renderer.render(scene, camera)
 }
 animate()
