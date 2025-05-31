@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: fit-content;overflow-x: hidden;
+}
+canvas{
+  height: 200vh;
+  width: 100vw;
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+}
+
+.background-text{
+  position: absolute;
+  top: 20%;
+  text-align: center;
+  width: 100%;
+  font-size: 7em;
+}
+
+.downtext{
+  position: absolute;
+  top: 150%;
+  width: 100%;
+  text-align: left;
+}
