@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Notes Section</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="notes.css">
 </head>
 <body>
-    
+    <nav class="flex">
+        <div class="backButton flex shadow">
+            <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <div class="navbar flex">
+            <div class="navContainer flex">
+                <div class="font flex">
+                    <select class="fontFamily">
+                        <option>-- Font --</option>
+                        <option>Calibri</option>
+                        <option>New Times Roman</option>
+                    </select>
+                    <span class="separator"></span>
+                    <input type="number" min="12" max="72" placeholder="12" value="12" class="fontSize">
+                    <div class="previewText">Preview Text</div>
+                </div>
+                <div class="textColor flex">
+                    <span>Color</span>
+                    <input type="color" class=" circle-select select-textColor">
+                    <span class="customColor text-customColor"></span>
+                </div>
+                <div class="highlight flex">
+                    <span>Highlight</span>
+                    <input type="color" class=" circle-select select-hgColor">
+                    <span class="customColor hg-customColor"></span>
+                </div>
+                <div class="list">
+                    <span>List</span>
+                    <div class="selectedStyle"></div>
+                    <div class="selectStyle">
+                        <div class="square"></div>
+                        <div class="rb-square"></div>
+                        <div class="radio">
+                            <i class="fa-regular fa-circle-dot"></i>
+                        </div>
+                        <div class="number">1</div>
+                        <div class="Alphabet">A</div>
+                        <div class="arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="BgColor flex">
+                    <span>Background Color</span>
+                    <input type="color" class=" circle-select select-bgColor">
+                    <span class="customColor bg-customColor"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
 </body>
 </html>
